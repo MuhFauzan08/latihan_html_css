@@ -1,0 +1,293 @@
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow: auto;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Format CSS-Ku */
+body {
+    background-color: #eaeaea;
+    font: 16px/28px arial, sans-serif;
+}
+
+/* Bagian Header dan Navigasi */
+header {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    background-color: rgb(50, 224, 196);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0px;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+nav {
+    height: 15px;
+    background-color: #0d7377;
+    padding: 15px;
+    line-height: 15px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a6f6f1;
+}
+
+nav a:hover {
+    font-size: 18px;
+}
+
+/* Bagian Konten  */
+.konten {
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 65%;
+    margin: 30px 0px 50px 30px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px #666666;
+}
+
+article h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+article em {
+    font-style: italic;
+}
+
+article strong {
+    font-weight: bold;
+}
+
+article ul {
+    margin-left: 30px;
+    font-size: 14px;
+    list-style-type: disc;
+}
+
+article .break {
+    margin-top: 10px;
+}
+
+div .konsep {
+    height: 231px;
+    width: 450px;
+    margin: 30px auto;
+    background-image: url(image/konsep_dasar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article ol {
+    margin-left: 30px;
+    font-size: 14px;
+    list-style-type: upper-roman;
+}
+
+/* Bagian Sidebar */
+aside {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 25%;
+    margin: 30px 30px 0px 0px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px #666666;
+}
+
+aside:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+aside h3 {
+    color: rgba(128, 128, 128, 0.63);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+aside pre {
+    color: rgb(109, 108, 108);
+    margin: 0px -30px;
+    line-height: 30px;
+}
+
+aside .penulis {
+    width: 250px;
+    margin: 10px 43px;
+
+}
+
+/* Bagian Footer */
+footer {
+    color: #eeeeee;
+    background-color: gray;
+    height: 50px;
+    position: relative;
+    margin-top: 2100px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* Mohon maaf,saya kasih margin-top karena gak tau salahnya dimana */
+
+/* Clear Fix */
+/* Tambahkan class cf pada bagian yang floatnya ingin dibersihkan */
+.cf::before,
+.cf::after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf::after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
